@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LDDT Website</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Import libraries -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Import fonts from google fonts -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lekton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="poppins-font bg-MainBg md:container md:mx-auto">
+    <!-- Navbar -->
+    <nav class="px-6 py-3 block bg-white rounded-full my-10">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt2">
+          <img class="w-60" src="./assets/Logo.svg" alt="" />
+        </div>
+
+        <!-- Navbar Items -->
+        <div class="hidden md:flex space-x-6 font-light text-MainBg">
+          <a class="hover:font-medium" href="">About Me</a>
+          <a class="hover:font-medium" href="">My Projects</a>
+          <a class="hover:font-medium" href="">Technologies</a>
+          <a class="hover:font-medium" href="https://blog.lucasodev.tk">Blog</a>
+        </div>
+
+        <!-- GitHub Button -->
+        <a
+          href="https://github.com/lucasodevdottk"
+          class="hidden p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 md:block"
+          >GitHub</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero segment -->
+    <div class="block">
+      <div class="text-primary1 flex justify-center p-4">
+        <div class="text-7xl">
+          I make
+          <span
+            class="text-primary2 lekton-font font-bold"
+            id="typewriter"
+          ></span>
+        </div>
+      </div>
+
+      <!-- My Projects button -->
+      <div class="flex justify-center p-20">
+        <a class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2" href="github.com">My Projects</a>
+      </div>
+
+      <!-- HTML Code image -->
+      <div>
+        <img class="rounded-3xl w-150" src="./assets/code.png" alt="">
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <!-- <div class="bg-primary flex justify-center">
+      <footer></footer>
+    </div> -->
+  </body>
+</html>
+
+<script src="./js/typewriter.js"></script>
