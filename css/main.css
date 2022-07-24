@@ -697,6 +697,10 @@ video {
   padding-right: 3.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
