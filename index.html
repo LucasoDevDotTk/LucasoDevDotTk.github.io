@@ -32,15 +32,23 @@
   <body class="poppins-font bg-MainBg">
     <!-- Navigation -->
     <section class="bg-white block p-4">
-      <nav class="md:container md:mx-auto">
+      <nav class="md:container mx-auto">
         <div class="flex items-center justify-between">
-          <!-- Logo -->
-          <div class="pt2">
-            <img class="w-60" src="./assets/Logo.svg" alt="" />
+
+          <div class="flex-col mx-auto sm:flex sm:mx-0">
+            <!-- Logo -->
+            <div class="mx-auto pt2 sm:mx-0">
+              <img class="w-60" src="./assets/Logo.svg" alt="" />
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="flex mx-auto text-4xl justify-center pt-3 sm:hidden">
+              &#9776;
+            </div>
           </div>
 
           <!-- Navbar Items -->
-          <div class="hidden md:flex space-x-6 font-light text-MainBg">
+          <div class="hidden sm:flex space-x-6 font-light text-MainBg">
             <a class="hover:font-medium" href="">About Me</a>
             <a class="hover:font-medium" href="">My Projects</a>
             <a class="hover:font-medium" href="">Technologies</a>
@@ -52,39 +60,38 @@
           <!-- GitHub Button -->
           <a
             href="https://github.com/lucasodevdottk"
-            class="hidden p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 md:block"
+            class="hidden p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 sm:block"
             >GitHub</a
           >
         </div>
       </nav>
     </section>
 
-    <!-- Hero segment -->
-    <div class="block text-center">
-      <div class="text-primary1 flex justify-center p-4">
-        <div class="text-7xl">
-          I make
-          <span
-            class="text-primary2 lekton-font font-bold"
-            id="typewriter"
-          ></span>
+    <!-- Hero section-->
+    <section>
+      <div class="block text-center md:container mx-auto">
+        <div class="text-primary1 flex-col justify-center p-4 text-7xl">
+          <p class="pt-40">I make</p>
+          <p class="pt-10 lekton-font font-bold text-primary2" id="typewriter"></p>
+
+          </div>
+        </div>
+
+        <!-- My Projects button -->
+        <div class="flex justify-center p-20">
+          <a
+            class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2"
+            href="#"
+            >My Projects</a
+          >
+        </div>
+
+        <!-- HTML Code image -->
+        <div>
+          <img class="w-100 mx-auto rounded-3xl sm:w-150 p-5" src="./assets/code.png" alt="" />
         </div>
       </div>
-
-      <!-- My Projects button -->
-      <div class="flex justify-center p-20">
-        <a
-          class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2"
-          href="github.com"
-          >My Projects</a
-        >
-      </div>
-
-      <!-- HTML Code image -->
-      <div>
-        <img class="rounded-3xl w-150" src="./assets/code.png" alt="" />
-      </div>
-    </div>
+    </section>
 
     <!-- About Me -->
     <div class="block"></div>

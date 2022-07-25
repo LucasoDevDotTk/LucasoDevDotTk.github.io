@@ -2,10 +2,10 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
+      sm: "1000px",
+      md: "1500px",
+      lg: "2000px",
+      xl: "2500px",
     },
     extend: {
       colors: {
