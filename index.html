@@ -31,14 +31,14 @@
 
   <body class="poppins-font bg-MainBg">
     <!-- Navigation -->
-    <section class="bg-white block p-4">
+    <section class="block p-4 bg-black/25">
       <nav class="md:container mx-auto">
         <div class="flex items-center justify-between">
 
           <div class="flex-col mx-auto sm:flex sm:mx-0">
             <!-- Logo -->
             <div class="mx-auto pt2 sm:mx-0">
-              <img class="w-60" src="./assets/Logo.svg" alt="" />
+              <img class="w-60" src="./assets/logo-white.svg" alt="" />
             </div>
 
             <!-- Hamburger Menu -->
@@ -48,11 +48,11 @@
           </div>
 
           <!-- Navbar Items -->
-          <div class="hidden sm:flex space-x-6 font-light text-MainBg">
-            <a class="hover:font-medium" href="">About Me</a>
-            <a class="hover:font-medium" href="">My Projects</a>
-            <a class="hover:font-medium" href="">Technologies</a>
-            <a class="hover:font-medium" href="https://blog.lucasodev.tk"
+          <div class="hidden sm:flex space-x-6 font-light text-primary1">
+            <a class="hover:font-medium hover:text-primary2" href="">About Me</a>
+            <a class="hover:font-medium hover:text-primary2" href="">My Projects</a>
+            <a class="hover:font-medium hover:text-primary2" href="">Technologies</a>
+            <a class="hover:font-medium hover:text-primary2" href="https://blog.lucasodev.tk"
               >Blog</a
             >
           </div>
@@ -60,7 +60,7 @@
           <!-- GitHub Button -->
           <a
             href="https://github.com/lucasodevdottk"
-            class="hidden p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 sm:block"
+            class="hidden sm:block p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 hover:text-white transition-all ease-in-out delay-100"
             >GitHub</a
           >
         </div>
@@ -72,18 +72,27 @@
       <div class="block text-center md:container mx-auto">
         <div class="text-primary1 flex-col justify-center p-4 text-7xl">
           <p class="pt-40">I make</p>
-          <p class="pt-10 lekton-font font-bold text-primary2" id="typewriter"></p>
+          <p class="text-center pt-10 lekton-font font-bold text-primary2" id="typewriter"></p>
 
           </div>
         </div>
 
         <!-- My Projects button -->
-        <div class="flex justify-center p-20">
-          <a
-            class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2"
-            href="#"
-            >My Projects</a
-          >
+        <div class="flex justify-center">
+          <div class="flex justify-center p-10">
+            <a
+              class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2"
+              href="#"
+              >My Projects</a
+            >
+          </div>
+          <div class="flex justify-center p-10">
+            <a
+              class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2"
+              href="#"
+              >My Projects</a
+            >
+          </div>
         </div>
 
         <!-- HTML Code image -->
