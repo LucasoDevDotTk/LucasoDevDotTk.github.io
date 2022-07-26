@@ -34,7 +34,6 @@
     <section class="block p-4 bg-black/25">
       <nav class="md:container mx-auto">
         <div class="flex items-center justify-between">
-
           <div class="flex-col mx-auto sm:flex sm:mx-0">
             <!-- Logo -->
             <div class="mx-auto pt2 sm:mx-0">
@@ -42,17 +41,27 @@
             </div>
 
             <!-- Hamburger Menu -->
-            <div class="flex mx-auto text-4xl justify-center pt-3 sm:hidden">
+            <div
+              class="flex mx-auto text-4xl justify-center pt-3 sm:hidden text-white"
+            >
               &#9776;
             </div>
           </div>
 
           <!-- Navbar Items -->
           <div class="hidden sm:flex space-x-6 font-light text-primary1">
-            <a class="hover:font-medium hover:text-primary2" href="">About Me</a>
-            <a class="hover:font-medium hover:text-primary2" href="">My Projects</a>
-            <a class="hover:font-medium hover:text-primary2" href="">Technologies</a>
-            <a class="hover:font-medium hover:text-primary2" href="https://blog.lucasodev.tk"
+            <a class="hover:font-medium hover:text-primary2" href=""
+              >About Me</a
+            >
+            <a class="hover:font-medium hover:text-primary2" href=""
+              >My Projects</a
+            >
+            <a class="hover:font-medium hover:text-primary2" href=""
+              >Technologies</a
+            >
+            <a
+              class="hover:font-medium hover:text-primary2"
+              href="https://blog.lucasodev.tk"
               >Blog</a
             >
           </div>
@@ -60,7 +69,7 @@
           <!-- GitHub Button -->
           <a
             href="https://github.com/lucasodevdottk"
-            class="hidden sm:block p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 hover:text-white transition-all ease-in-out delay-100"
+            class="hidden sm:block p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 hover:text-white transition-all ease-in-out"
             >GitHub</a
           >
         </div>
@@ -70,34 +79,69 @@
     <!-- Hero section-->
     <section>
       <div class="block text-center md:container mx-auto">
-        <div class="text-primary1 flex-col justify-center p-4 text-7xl">
-          <p class="pt-40">I make</p>
-          <p class="text-center pt-10 lekton-font font-bold text-primary2" id="typewriter"></p>
-
-          </div>
-        </div>
-
-        <!-- My Projects button -->
-        <div class="flex justify-center">
-          <div class="flex justify-center p-10">
-            <a
-              class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2"
-              href="#"
-              >My Projects</a
-            >
-          </div>
-          <div class="flex justify-center p-10">
-            <a
-              class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2"
-              href="#"
-              >My Projects</a
-            >
-          </div>
-        </div>
-
-        <!-- HTML Code image -->
         <div>
-          <img class="w-100 mx-auto rounded-3xl sm:w-150 p-5" src="./assets/code.png" alt="" />
+          <div class="text-primary1 flex-col justify-center p-4 text-7xl">
+            <p class="pt-20 text-center">I make</p>
+            <p
+              class="text-center pt-5 lekton-font font-bold text-primary2 justify-center"
+              id="typewriter"
+            ></p>
+          </div>
+        </div>
+
+        <!-- Services btn -->
+        <div class="flex justify-center p-10 items-center">
+          <a
+            class="p-3 px-14 bg-primary1 rounded-full hover:bg-primary2 hover:text-white transition-all ease-in-out"
+            href="#"
+            >Services</a
+          >
+        </div>
+
+        <!-- HTML Code images -->
+        <div class="hidden sm:block">
+          <div class="grid grid-flow-col grid-rows-1">
+            <div class="flex-col">
+              <div class="m-0 p-0">
+                <img
+                  src="./assets/blog.md.svg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="m-0 p-0">
+                <img
+                  src="./assets/index.html.svg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                class="m-0 p-0"
+                src="./assets/bot.py.svg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <img
+                class="m-0 p-0"
+                src="./assets/tailwind.config.js.svg"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:hidden mt-20">
+          <a href=""
+            ><p class="text-white text-center text-7xl animate-bounce">
+              &#8615;
+            </p></a
+          >
         </div>
       </div>
     </section>
