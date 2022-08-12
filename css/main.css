@@ -558,6 +558,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -583,8 +591,16 @@ video {
   width: 15rem;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -605,6 +621,10 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -621,6 +641,25 @@ video {
 .bg-primary1 {
   --tw-bg-opacity: 1;
   background-color: rgb(188 13 222 / var(--tw-bg-opacity));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-primary2 {
+  --tw-gradient-from: #ee387a;
+  --tw-gradient-to: rgb(238 56 122 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-primary {
+  --tw-gradient-to: #8a06d7;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .p-10 {
@@ -640,8 +679,16 @@ video {
   padding-right: 3.5rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -653,14 +700,24 @@ video {
   line-height: 1;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -691,6 +748,10 @@ video {
   color: rgb(5 11 57 / var(--tw-text-opacity));
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -709,13 +770,17 @@ video {
   font-family: 'Rubik';
 }
 
+.font-consolas {
+  font-family: Consolas;
+}
+
 .hover\:bg-primary2:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(238 56 122 / var(--tw-bg-opacity));
 }
 
-.hover\:font-medium:hover {
-  font-weight: 500;
+.hover\:font-bold:hover {
+  font-weight: 700;
 }
 
 .hover\:text-primary2:hover {
@@ -780,5 +845,9 @@ video {
     .md\:container {
       max-width: 1536px;
     }
+  }
+
+  .md\:flex {
+    display: flex;
   }
 }

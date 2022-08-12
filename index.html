@@ -14,71 +14,85 @@
 
     <!-- Import fonts from google fonts -->
     <!-- Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Rubik -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="font-inter bg-MainBg">
-
-    <!-- Hero + Navbar Section -->
-    <div class="min-h-screen">
-
-      <!-- Navigation -->
-      <section class="block p-4 bg-black/25">
-        <nav class="md:container mx-auto">
-          <div class="flex items-center justify-between">
-            <div class="flex-col mx-auto sm:flex sm:mx-0">
-              <!-- Logo -->
-              <div class="mx-auto pt2 sm:mx-0">
-                <img class="w-60" src="./assets/logo-white.svg" alt="" />
-              </div>
-              <!-- End of Logo -->
-
-              <!-- Hamburger Menu -->
-              <div
-                class="flex mx-auto text-4xl justify-center pt-3 sm:hidden text-white"
-              >
-                &#9776;
-              </div>
-              <!-- End of Hamburger Menu -->
+    <!-- Navigation -->
+    <section class="block p-4 bg-black/25">
+      <nav class="md:container mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="flex-col mx-auto sm:flex sm:mx-0">
+            <!-- Logo -->
+            <div class="mx-auto pt2 sm:mx-0">
+              <img class="w-60" src="./assets/logo-white.svg" alt="" />
             </div>
+            <!-- End of Logo -->
 
-            <!-- Navbar Items -->
-            <div class="hidden sm:flex space-x-6 font-light text-primary1">
-              <a class="hover:font-medium hover:text-primary2" href="#about-me"
-                >About Me</a
-              >
-              <a class="hover:font-medium hover:text-primary2" href=""
-                >My Projects</a
-              >
-              <a class="hover:font-medium hover:text-primary2" href=""
-                >Technologies</a
-              >
-              <a
-                class="hover:font-medium hover:text-primary2"
-                href="https://blog.lucasodev.tk"
-                >Blog</a
-              >
-            </div>
-            <!-- End of Navbar Items -->
-
-            <!-- Services Button -->
-            <a
-              href="./404.html"
-              class="hidden sm:block p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 hover:text-white transition-all ease-in-out"
-              >Services</a
+            <!-- Hamburger Menu -->
+            <div
+              class="flex mx-auto text-4xl justify-center pt-3 sm:hidden text-white"
             >
-            <!-- End of Services Button -->
+              &#9776;
+            </div>
+            <!-- End of Hamburger Menu -->
           </div>
-        </nav>
-      </section> 
-      <!-- End of Hero + Navbar Section -->
+
+          <!-- Navbar Items -->
+          <div
+            class="hidden md:flex space-x-6 text-primary1 font-light text-lg"
+          >
+            <a class="hover:font-bold hover:text-primary2" href="#about-me"
+              >About Me</a
+            >
+            <a class="hover:font-bold hover:text-primary2" href=""
+              >My Projects</a
+            >
+            <a class="hover:font-bold hover:text-primary2" href=""
+              >Technologies</a
+            >
+            <a
+              class="hover:font-bold hover:text-primary2"
+              href="https://blog.lucasodev.tk"
+              >Blog</a
+            >
+          </div>
+          <!-- End of Navbar Items -->
+
+          <!-- Services Button -->
+          <a
+            href="./404.html"
+            class="hidden sm:block p-3 px-14 bg-primary1 rounded-full baseline text-MainBg hover:bg-primary2 hover:text-white transition-all ease-in-out"
+            >Services</a
+          >
+          <!-- End of Services Button -->
+        </div>
+      </nav>
+    </section>
+
+    <section class="md:container mx-auto">
+      <div class="pt-20">
+        <img src="" alt="">
+        <h1 class="font-rubik text-white text-8xl font-bold">
+          Hi, I'm LucasoDev
+        </h1>
+        <p class="text-white text-4xl font-rubik pt-10">I create <span id="typewriter" class="font-consolas text-transparent font-bold bg-clip-text bg-gradient-to-r from-primary2 to-primary ">Test</span></p>
+        <img class="absolute flex justify-center top-0 overflow-visible w-3/4" src="./assets/transparent_cir.svg">     
+      </div>
+    </section>
   </body>
 </html>
 
