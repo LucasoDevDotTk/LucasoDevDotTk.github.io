@@ -623,16 +623,16 @@ video {
   background-color: rgb(188 13 222 / var(--tw-bg-opacity));
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-14 {
@@ -648,19 +648,19 @@ video {
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -669,6 +669,11 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.text-primary2 {
+  --tw-text-opacity: 1;
+  color: rgb(238 56 122 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -684,16 +689,6 @@ video {
 .text-MainBg {
   --tw-text-opacity: 1;
   color: rgb(5 11 57 / var(--tw-text-opacity));
-}
-
-.text-red-50 {
-  --tw-text-opacity: 1;
-  color: rgb(254 242 242 / var(--tw-text-opacity));
-}
-
-.text-primary2 {
-  --tw-text-opacity: 1;
-  color: rgb(238 56 122 / var(--tw-text-opacity));
 }
 
 .transition-all {
