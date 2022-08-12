@@ -631,6 +631,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -640,9 +644,27 @@ video {
   padding-top: 0.75rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-light {
@@ -664,6 +686,16 @@ video {
   color: rgb(5 11 57 / var(--tw-text-opacity));
 }
 
+.text-red-50 {
+  --tw-text-opacity: 1;
+  color: rgb(254 242 242 / var(--tw-text-opacity));
+}
+
+.text-primary2 {
+  --tw-text-opacity: 1;
+  color: rgb(238 56 122 / var(--tw-text-opacity));
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -674,12 +706,12 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.poppins-font {
-  font-family: Poppins;
+.font-inter {
+  font-family: 'Inter';
 }
 
-.lekton-font {
-  font-family: Lekton;
+.font-rubik {
+  font-family: 'Rubik';
 }
 
 .hover\:bg-primary2:hover {

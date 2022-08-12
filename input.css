@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.poppins-font {
-    font-family: Poppins;
+.font-inter {
+    font-family: 'Inter';
+
 }
 
-.lekton-font {
-    font-family: Lekton;
+.font-rubik {
+    font-family: 'Rubik';
 }
