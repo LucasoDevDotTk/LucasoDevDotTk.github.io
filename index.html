@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LucasoDev Website</title>
+
+    <!-- Import CSS Stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Import libraries -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Import fonts from google fonts -->
+
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Inter -->
+
+    <!-- Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Rubik -->
+
+    <!-- Lekton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lekton:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Lekton -->
+    <!-- End of Import fonts from google fonts -->
+  </head>
+
+  <body class="font-inter bg-MainBg">
+    <!-- Hero and Navigation -->
+    <div
+      style="background-image: url('./assets/transparent_cir.svg')"
+      class="relative min-h-screen bg-no-repeat overflow-visible md:bg-right-top bg-contain"
+    >
+      <!-- Navigation -->
+      <section class="block p-5 bg-black/25">
+        <nav class="md:container mx-auto">
+          <div class="flex items-center justify-between">
+            <div class="flex-col mx-auto lg:flex lg:mx-0">
+              <!-- Logo -->
+              <div class="mx-auto pt2 sm:mx-0">
+                <img class="w-60" src="./assets/logo-white.svg" alt="" />
+              </div>
+              <!-- End of Logo -->
+
+              <!-- Hamburger Menu -->
+              <div
+                class="flex mx-auto text-4xl justify-center pt-3 lg:hidden text-white"
+              >
+                &#9776;
+              </div>
+              <!-- End of Hamburger Menu -->
+            </div>
+
+            <!-- Navbar Items -->
+            <div
+              class="hidden lg:flex space-x-6 text-primary1 font-light text-lg"
+            >
+              <a class="hover:text-primary2" href="#about-me">About Me</a>
+              <a class="hover:text-primary2" href="">My Projects</a>
+              <a class="hover:text-primary2" href="">Technologies</a>
+              <a class="hover:text-primary2" href="">Contact</a>
+              <a class="hover:text-primary2" href="https://blog.lucasodev.tk"
+                >Blog</a
+              >
+            </div>
+            <!-- End of Navbar Items -->
+
+            <!-- Services Button -->
+            <a
+              href="./404.html"
+              class="hidden lg:block p-3 px-14 bg-primary1 rounded-lg baseline text-MainBg hover:bg-primary2 hover:text-white transition-all ease-in-out"
+              >Services</a
+            >
+            <!-- End of Services Button -->
+          </div>
+        </nav>
+      </section>
+      <!-- End of Navigation -->
+
+      <!-- Hero -->
+      <section>
+        <div class="md:container mx-auto">
+          <h1
+            class="font-rubik text-center text-white pt-20 text-7xl font-bold md:text-8xl md:text-left"
+          >
+            Hi, I'm LucasoDev
+          </h1>
+          <p
+            class="text-white text-3xl text-center md:text-4xl md:text-left font-rubik pt-10"
+          >
+            I create
+            <span
+              id="typewriter"
+              class="font-consolas text-transparent font-bold bg-clip-text bg-gradient-to-r from-primary2 to-primary"
+              >Test</span
+            >
+          </p>
+
+          <!-- Contact Btn -->
+          <div class="mt-20 justify-center block text-center md:text-left">
+            <a
+              class="p-3 px-14 border-2 border-primary1 rounded-lg hover:border-primary2 text-white transition-all ease-in-out"
+              href="#"
+              >Contact -></a
+            >
+          </div>
+          <!-- End of Contact Btn -->
+        </div>
+
+        <!-- Hero (2) -->
+        <div class="bg-black/40 mt-60">
+          <div
+            class="text-white md:container mx-auto md:flex text-center md:text-left py-14"
+          >
+            <div
+              class="md:mr-20 md:w-80 mx-14 md:mx-0 border-primary1 border-4 rounded-lg my-10 p-10"
+            >
+              <h3 class="font-bold text-2xl">Open source for everyone</h3>
+              <p class="text-cgrey text-xl py-4">
+                Absolutely all of my work is fully open source and is available
+                on GitHub right now, for everyone.
+              </p>
+              <div class="my-10">
+                <a
+                  class="block text-center p-3 bg-primary1 rounded-md px-10 hover:bg-primary2 transition-all ease-in-out"
+                  href=""
+                  >GitHub ->
+                </a>
+              </div>
+            </div>
+            <div
+              class="md:w-80 mx-14 md:mx-0 border-primary2 border-4 rounded-lg my-10 p-10"
+            >
+              <h3 class="font-bold text-2xl">
+                Glorifying and fantastic websites
+              </h3>
+              <p class="text-cgrey text-xl py-4">
+                Get assistance to build the most glorifying and fantastic
+                websites out there, with creativity in mind. Everyone needs a
+                website, and now is the perfect time!
+              </p>
+              <div class="my-10">
+                <a
+                  class="block text-center p-3 bg-primary2 rounded-md px-10 hover:bg-primary1 transition-all ease-in-out"
+                  href=""
+                  >Services ->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Hero (2) -->
+      </section>
+      <!-- End of Hero -->
+    </div>
+    <!-- End of Hero and Navigation -->
+
+    <section class="mt-16">
+      <div class="md:container mx-auto">
+        <h3 class="font-rubik text-white text-3xl">ABOUT ME</h3>
+      </div>
+    </section>
+  </body>
+</html>
+
+<script src="./js/typewriter.js"></script>
