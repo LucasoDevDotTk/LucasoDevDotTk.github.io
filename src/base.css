@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-inter {
+    font-family: 'Inter';
+
+}
+
+.font-rubik {
+    font-family: 'Rubik';
+}
+
+.font-consolas {
+    font-family: 'Lekton';
+}
