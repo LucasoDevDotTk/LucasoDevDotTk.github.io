@@ -1,12 +1,17 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import FontImport from "../components/FontImport.astro";
 
 import "../base.css"
 ---
 
-<body class="bg-MainBg">
-    <Navbar />
-        <slot />
-    <Footer />
+<body class="bg-MainBg font-inter">
+    <FontImport />
+    <div style="background-image: url('./transparent_cir.svg')"
+    class="relative min-h-screen bg-no-repeat overflow-visible md:bg-right-top bg-contain">
+        <Navbar />
+            <slot />
+        <Footer />
+    </div>
 </body>
