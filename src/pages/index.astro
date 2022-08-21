@@ -1,6 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 
+import FillButtonPrimary from "../components/FillButtonPrimary.astro";
+import FillButtonSecondary from "../components/FillButtonSecondary.astro";
+import ButtonBorder from "../components/ButtonBorder.astro";
+
 const title = "LucasoDev's Website";
 ---
 
@@ -14,8 +18,10 @@ const title = "LucasoDev's Website";
 	</head>
 
 	<MainLayout>
-		<!-- Hero -->
-		<section>
+		<section
+			style="background-image: url('./transparent_cir.svg')"
+			class="relative min-h-screen bg-no-repeat overflow-visible md:bg-right-top bg-contain"
+		>
 			<div class="md:container mx-auto">
 				<h1
 					class="font-rubik text-center text-white pt-20 text-7xl font-bold md:text-8xl md:text-left"
@@ -33,20 +39,15 @@ const title = "LucasoDev's Website";
 					</span>
 				</p>
 
-				<!-- Contact Btn -->
-				<div
-					class="mt-20 justify-center block text-center md:text-left"
-				>
-					<a
-						class="p-3 px-14 border-2 border-primary1 rounded-lg hover:border-primary2 text-white transition-all ease-in-out"
-						href="#"
-						>Contact -&gt
-					</a>
+				<div class="mt-20">
+					<ButtonBorder
+						text="Contact"
+						href="https://lucasodev.tk/404.html"
+						input_color="primary1"
+					/>
 				</div>
-				<!-- End of Contact Btn -->
 			</div>
 
-			<!-- Hero (2) -->
 			<div class="bg-black/40 mt-60">
 				<div
 					class="text-white md:container mx-auto md:flex text-center md:text-left py-14"
@@ -61,13 +62,10 @@ const title = "LucasoDev's Website";
 							Absolutely all of my work is fully open source and
 							is available on GitHub right now, for everyone.
 						</p>
-						<div class="my-10">
-							<a
-								class="block text-center p-3 bg-primary1 rounded-md px-10 hover:bg-primary2 transition-all ease-in-out"
-								href=""
-								>GitHub -&gt
-							</a>
-						</div>
+						<FillButtonPrimary
+							text="GitHub"
+							href="https://github.com/lucasodevdottk"
+						/>
 					</div>
 					<div
 						class="md:w-80 mx-14 md:mx-0 border-primary2 border-4 rounded-lg my-10 p-10"
@@ -81,18 +79,13 @@ const title = "LucasoDev's Website";
 							mind. Everyone needs a website, and now is the
 							perfect time!
 						</p>
-						<div class="my-10">
-							<a
-								class="block text-center p-3 bg-primary2 rounded-md px-10 hover:bg-primary1 transition-all ease-in-out"
-								href=""
-								>Services -&gt
-							</a>
-						</div>
+						<FillButtonSecondary
+							text="Services"
+							href="https://lucasodev.tk/404"
+						/>
 					</div>
 				</div>
 			</div>
-			<!-- End of Hero (2) -->
 		</section>
-		<!-- End of Hero -->
 	</MainLayout>
 </html>

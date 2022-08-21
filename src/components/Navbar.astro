@@ -1,26 +1,20 @@
 ---
+import ButtonBorder from "./ButtonBorder.astro";
 ---
 
 <section class="block p-3 bg-black/25 font-inter">
     <nav class="md:container mx-auto">
         <div class="flex items-center justify-between">
             <div class="flex-col mx-auto lg:flex lg:mx-0">
-                <!-- Logo -->
                 <div class="mx-auto pt2 sm:mx-0">
                     <img class="w-60" src="./logo.svg" alt="" />
                 </div>
-                <!-- End of Logo -->
-
-                <!-- Hamburger Menu -->
                 <div
                     class="flex mx-auto text-4xl justify-center pt-3 lg:hidden text-white"
                 >
                     &#9776;
                 </div>
-                <!-- End of Hamburger Menu -->
             </div>
-
-            <!-- Navbar Items -->
             <div
                 class="hidden lg:flex space-x-6 text-primary1 font-light text-lg"
             >
@@ -32,15 +26,9 @@
                     >Blog
                 </a>
             </div>
-            <!-- End of Navbar Items -->
-
-            <!-- Services Button -->
-            <a
-                href="./404.html"
-                class="hidden lg:block p-3 px-14 bg-primary1 rounded-lg baseline text-MainBg hover:bg-primary2 hover:text-white transition-all ease-in-out"
-                >Services
-            </a>
-            <!-- End of Services Button -->
+            <div class="hidden lg:block m-5">
+                <ButtonBorder text="Services" href="lucasodev.tk/404"/>
+            </div>
         </div>
     </nav>
 </section>

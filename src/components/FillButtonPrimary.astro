@@ -1,0 +1,14 @@
+---
+const {text} = Astro.props;
+const {href} = Astro.props;
+// const {input_color} = Astro.props;
+// const {hover_color} = Astro.props;
+
+// const tw_css = "block text-center p-3 rounded-md px-10 transition-all ease-in-out " + "bg-" + input_color + " hover:bg-" + hover_color;
+---
+
+<div class="my-10">
+    <a class="block text-center p-3 rounded-md px-10 transition-all ease-in-out bg-primary1 hover:bg-primary2" href={href}
+        >{text} -&gt
+    </a>
+</div>
