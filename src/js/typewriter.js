@@ -1,3 +1,5 @@
+import Typewriter from 'typewriter-effect/dist/core';
+
 new Typewriter('#typewriter', {
   strings: ['beautiful websites', 'amazing dashboards', 'easy-to-use apps', 'useful cli tools', 'discord bots'],
   autoStart: true,
