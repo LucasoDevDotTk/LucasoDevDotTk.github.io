@@ -1,0 +1,14 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import FontImport from "../components/FontImport.astro";
+
+import "../base.css"
+---
+
+<body class="bg-MainBg font-inter">
+    <FontImport />
+    <Navbar />
+        <slot />
+    <Footer />
+</body>

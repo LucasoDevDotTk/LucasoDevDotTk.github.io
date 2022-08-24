@@ -1,0 +1,92 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+import FillButtonPrimary from "../components/FillButtonPrimary.astro";
+import FillButtonSecondary from "../components/FillButtonSecondary.astro";
+import ButtonBorder from "../components/ButtonBorder.astro";
+import Typewriter from "../components/Typewriter.astro";
+
+const title = "LucasoDev's Website";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+	</head>
+
+	<MainLayout>
+		<section
+			style="background-image: url('./transparent_cir.svg')"
+			class="relative min-h-screen bg-no-repeat overflow-visible md:bg-right-top bg-contain"
+		>
+			<div class="md:container mx-auto">
+				<h1
+					class="font-rubik text-center text-white pt-20 text-7xl font-bold md:text-8xl md:text-left"
+				>
+					Hi, I'm LucasoDev
+				</h1>
+				<p
+					class="text-white text-3xl text-center md:text-4xl md:text-left font-rubik pt-10"
+				>
+					I create
+					<span
+						class="font-consolas text-transparent font-bold bg-clip-text bg-gradient-to-r from-primary2 to-primary"
+					>
+						<Typewriter />
+					</span>
+				</p>
+
+				<div class="mt-24">
+					<ButtonBorder
+						text="Contact"
+						href="https://lucasodev.tk/404.html"
+						input_color="primary1"
+					/>
+				</div>
+			</div>
+
+			<div class="bg-black/40 mt-60">
+				<div
+					class="text-white md:container mx-auto md:flex text-center md:text-left py-14"
+				>
+					<div
+						class="md:mr-20 md:w-80 mx-14 md:mx-0 border-primary1 border-4 rounded-lg my-10 p-10"
+					>
+						<h3 class="font-bold text-2xl">
+							Open source for everyone
+						</h3>
+						<p class="text-cgrey text-xl py-4">
+							Absolutely all of my work is fully open source and
+							is available on GitHub right now, for everyone.
+						</p>
+						<FillButtonPrimary
+							text="GitHub"
+							href="https://github.com/lucasodevdottk"
+						/>
+					</div>
+					<div
+						class="md:w-80 mx-14 md:mx-0 border-primary2 border-4 rounded-lg my-10 p-10"
+					>
+						<h3 class="font-bold text-2xl">
+							Glorifying and fantastic websites
+						</h3>
+						<p class="text-cgrey text-xl py-4">
+							Get assistance to build the most glorifying and
+							fantastic websites out there, with creativity in
+							mind. Everyone needs a website, and now is the
+							perfect time!
+						</p>
+						<FillButtonSecondary
+							text="Services"
+							href="https://lucasodev.tk/404"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+	</MainLayout>
+</html>

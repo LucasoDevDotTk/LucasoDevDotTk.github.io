@@ -1,25 +1,20 @@
 {
-  "name": "lucasodevdottk.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "build": "npx tailwindcss -i input.css -o ./css/main.css",
-    "watch": "npx tailwindcss -i input.css -o ./css/main.css --watch"
-
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "add": "astro add"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LucasoDevDotTk/LucasoDevDotTk.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LucasoDevDotTk/LucasoDevDotTk.github.io/issues"
-  },
-  "homepage": "https://github.com/LucasoDevDotTk/LucasoDevDotTk.github.io#readme",
   "devDependencies": {
-    "tailwindcss": "^3.1.6"
+    "@astrojs/tailwind": "^1.0.0",
+    "astro": "^1.0.6"
+  },
+  "dependencies": {
+    "typewriter-effect": "^2.19.0"
   }
 }

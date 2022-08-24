@@ -1,0 +1,12 @@
+---
+let {text} = Astro.props;
+let {href} = Astro.props;
+---
+
+<div class="text-center md:text-left">
+    <a
+        class="p-3 px-14 border-2 border-primary1 rounded-lg hover:border-primary2 text-white transition-all ease-in-out"
+        href={href}
+        >{text} -&gt
+    </a>
+</div>
