@@ -1,3 +1,5 @@
+# Test CI
+
 name: Github Pages Astro CI
 
 on:
