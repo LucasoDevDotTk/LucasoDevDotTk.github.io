@@ -22,17 +22,17 @@ const title = "LucasoDev's Website";
     <!-- Hero -->
     <section
       style="background-image: url('./transparent_cir.svg')"
-      class="relative bg-no-repeat overflow-visible md:bg-right-top bg-contain"
+      class="relative bg-no-repeat overflow-visible lg:bg-right-top bg-contain"
     >
       <!-- Hero Content-Text -->
-      <div class="md:container mx-auto">
+      <div class="lg:container mx-auto px-10">
         <h1
-          class="font-rubik text-center text-white pt-20 text-7xl font-bold md:text-8xl md:text-left"
+          class="font-rubik text-center text-white pt-20 text-7xl font-bold lg:text-8xl lg:text-left"
         >
           Hi, I'm LucasoDev
         </h1>
         <p
-          class="text-white text-3xl text-center md:text-4xl md:text-left font-rubik pt-10"
+          class="text-white text-3xl text-center lg:text-4xl lg:text-left font-rubik pt-10"
         >
           I create
           <span
@@ -42,7 +42,7 @@ const title = "LucasoDev's Website";
           </span>
         </p>
 
-        <div class="mt-24">
+        <div class="mt-24 text-center lg:text-left">
           <ButtonBorder text="Read More" href="https://lucasodev.tk/404.html" />
         </div>
       </div>
@@ -51,11 +51,11 @@ const title = "LucasoDev's Website";
       <!-- Hero Content-Cards -->
       <div class="bg-black/40 mt-20">
         <div
-          class="text-white md:container mx-auto md:flex text-center md:text-left py-14"
+          class="text-white lg:container mx-auto md:flex text-center md:text-left py-14 md:justify-center lg:justify-start px-10"
         >
           <!-- Card 1 -->
           <div
-            class="md:mr-20 md:w-80 mx-14 md:mx-0 border-primary1 border-4 rounded-lg my-10 p-10"
+            class="lg:mr-20 md:w-80 md:mx-5 lg:mx-0 border-primary1 border-4 rounded-lg my-10 p-10"
           >
             <h3 class="font-bold text-2xl">Open source for everyone</h3>
             <p class="text-cgrey text-xl py-4">
@@ -70,7 +70,7 @@ const title = "LucasoDev's Website";
           <!-- End Card 1 -->
           <!-- Card 2 -->
           <div
-            class="md:w-80 mx-14 md:mx-0 border-primary2 border-4 rounded-lg my-10 p-10"
+            class="md:w-80 lg:mx-0 md:mx-5 border-primary2 border-4 rounded-lg my-10 p-10"
           >
             <h3 class="font-bold text-2xl">
               Glorifying and fantastic websites
@@ -92,12 +92,12 @@ const title = "LucasoDev's Website";
     <!-- End Hero -->
     <!-- About Me -->
     <section class="bg-black/40">
-      <div class="pt-10 md:container md:mx-auto">
-        <h2 class="text-4xl font-rubik text-white text-center md:text-left">
+      <div class="py-10 lg:container lg:mx-auto px-10">
+        <h2 class="text-4xl font-rubik text-white text-center lg:text-left underline underline-offset-4 decoration-4 decoration-primary2">
           About Me
         </h2>
         <div class="flex">
-          <p class="text-cgrey mt-4">
+          <p class="text-cgrey mt-4 text-center">
             I'm a 13-year-old norwegian tech enthusiast. I love to tinker with
             computers and have always loved to do so. Knowing Python, HTML, and
             CSS, I consider myself a junior developer. I have made a more
@@ -106,7 +106,7 @@ const title = "LucasoDev's Website";
             that I love web-design, so I made this website!
           </p>
           <img
-            class="hidden md:block"
+            class="hidden lg:block"
             src="./computer-guy.svg"
             alt="Illustration of a guy thinking while sitting besides a laptop"
           />
@@ -114,5 +114,20 @@ const title = "LucasoDev's Website";
       </div>
     </section>
     <!-- End About Me -->
+
+    <!-- My projects -->
+    <section class="lg:container mx-auto px-10">
+      <div class="py-20">
+        <h2 class="font-rubik text-white text-4xl text-center">Free <span class="text-primary2">Software & Services</span></h2>
+        <p class="text-center text-cgrey pt-10">These are some of the biggest projects I have worked on or working on. All of them are free and open source on GithHub. I am planning on making several new projects in the future.</p>
+      </div>
+
+      <!-- Cards -->
+      <div>
+        
+      </div>
+      <!-- End Cards -->
+    </section>
+    <!-- End My projects -->
   </MainLayout>
 </html>
