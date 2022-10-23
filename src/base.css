@@ -14,3 +14,8 @@
 .font-consolas {
     font-family: 'Lekton';
 }
+
+.glide__slide li{
+    list-style-image: url("/checkmark.svg");
+
+}
