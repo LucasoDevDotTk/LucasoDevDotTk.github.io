@@ -5,6 +5,7 @@ import FillButtonPrimary from "../components/FillButtonPrimary.astro";
 import FillButtonSecondary from "../components/FillButtonSecondary.astro";
 import ButtonBorder from "../components/ButtonBorder.astro";
 import Typewriter from "../components/Typewriter.astro";
+import MainGlider from "../components/MainGlider.astro";
 
 const title = "LucasoDev's Website";
 ---
@@ -42,7 +43,7 @@ const title = "LucasoDev's Website";
           </span>
         </p>
 
-        <div class="mt-24 text-center lg:text-left">
+        <div class="mt-24 text-center w-56">
           <ButtonBorder text="Read More" href="https://lucasodev.tk/404.html" />
         </div>
       </div>
@@ -90,6 +91,7 @@ const title = "LucasoDev's Website";
       <!-- End Hero Content-Cards -->
     </section>
     <!-- End Hero -->
+
     <!-- About Me -->
     <section class="bg-black/40">
       <div class="py-10 lg:container lg:mx-auto px-10">
@@ -116,15 +118,15 @@ const title = "LucasoDev's Website";
     <!-- End About Me -->
 
     <!-- My projects -->
-    <section class="lg:container mx-auto px-10">
-      <div class="py-20">
+    <section class="lg:container mx-auto">
+      <div class="py-20 px-10">
         <h2 class="font-rubik text-white text-4xl text-center">Free <span class="text-primary2">Software & Services</span></h2>
         <p class="text-center text-cgrey pt-10">These are some of the biggest projects I have worked on or working on. All of them are free and open source on GithHub. I am planning on making several new projects in the future.</p>
       </div>
 
       <!-- Cards -->
       <div>
-        
+        <MainGlider></MainGlider>
       </div>
       <!-- End Cards -->
     </section>
