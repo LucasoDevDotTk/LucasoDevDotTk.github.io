@@ -1,0 +1,7 @@
+/* Sylesheet for index.html, shall not be used in any other markup file */
+
+.bg-mainGlider {
+    background-image: url("blobs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}

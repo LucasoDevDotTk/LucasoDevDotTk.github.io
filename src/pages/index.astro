@@ -8,6 +8,8 @@ import Typewriter from "../components/Typewriter.astro";
 import MainGlider from "../components/MainGlider.astro";
 
 const title = "LucasoDev's Website";
+
+import "../css/index.css"
 ---
 
 <!DOCTYPE html>
@@ -43,7 +45,7 @@ const title = "LucasoDev's Website";
           </span>
         </p>
 
-        <div class="mt-24 text-center w-56">
+        <div class="mt-24 text-center w-56 mx-auto lg:mx-0">
           <ButtonBorder text="Read More" href="https://lucasodev.tk/404.html" />
         </div>
       </div>
@@ -118,7 +120,7 @@ const title = "LucasoDev's Website";
     <!-- End About Me -->
 
     <!-- My projects -->
-    <section class="lg:container mx-auto lg:px-10">
+    <section class="lg:container mx-auto lg:px-10 bg-mainGlider">
       <div class="py-20 px-10 lg:px-0">
         <h2 class="font-rubik text-white text-4xl text-center">Free <span class="text-primary2">Software & Services</span></h2>
         <p class="text-center text-cgrey pt-10">These are some of the biggest projects I have worked on or working on. All of them are free and open source on GithHub. I am planning on making several new projects in the future.</p>
