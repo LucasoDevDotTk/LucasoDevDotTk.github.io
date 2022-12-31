@@ -20,7 +20,10 @@ const {title} = Astro.props;
     <body class="bg-MainBg font-inter">
         <FontImport />
         <Navbar />
+        <section class="px-10 text-center lg:text-left lg:container mx-auto">
+            <h1 class="text-6xl font-rubik text-white">{title}</h1>
             <slot />
+        </section>
         <Footer />
     </body>
 

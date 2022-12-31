@@ -9,129 +9,125 @@ import MainGlider from "../components/MainGlider.astro";
 
 const title = "LucasoDev's Website";
 
-import "../css/index.css"
+import "../css/index.css";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
-  </head>
-
-  <MainLayout>
-    <!-- Hero -->
-    <section
-      style="background-image: url('./transparent_cir.svg')"
-      class="relative bg-no-repeat overflow-visible md:bg-right-top bg-contain"
-    >
-      <!-- Hero Content-Text -->
-      <div class="lg:container mx-auto px-10">
-        <h1
-          class="font-rubik text-6xl text-center text-white pt-20 md:text-7xl font-bold lg:text-8xl lg:text-left"
+<MainLayout title={title}>
+  <!-- Hero -->
+  <section
+    style="background-image: url('./transparent_cir.svg')"
+    class="relative bg-no-repeat overflow-visible md:bg-right-top bg-contain"
+  >
+    <!-- Hero Content-Text -->
+    <div class="lg:container mx-auto px-10">
+      <h1
+        class="font-rubik text-6xl text-center text-white pt-20 md:text-7xl font-bold lg:text-8xl lg:text-left"
+      >
+        Hi, I'm LucasoDev
+      </h1>
+      <p
+        class="text-white text-3xl text-center lg:text-4xl lg:text-left font-rubik pt-10 h-20"
+      >
+        I create
+        <span
+          class="font-consolas text-transparent font-bold bg-clip-text bg-gradient-to-r from-primary2 to-primary"
         >
-          Hi, I'm LucasoDev
-        </h1>
-        <p
-          class="text-white text-3xl text-center lg:text-4xl lg:text-left font-rubik pt-10 h-20"
-        >
-          I create
-          <span
-            class="font-consolas text-transparent font-bold bg-clip-text bg-gradient-to-r from-primary2 to-primary"
-          >
-            <Typewriter />
-          </span>
-        </p>
+          <Typewriter />
+        </span>
+      </p>
 
-        <div class="mt-24 text-center w-56 mx-auto lg:mx-0">
-          <ButtonBorder text="Read More" href="https://lucasodev.tk/404.html" />
-        </div>
+      <div class="mt-24 text-center w-56 mx-auto lg:mx-0">
+        <ButtonBorder text="Read More" href="https://lucasodev.tk/404.html" />
       </div>
-      <!-- End Hero Content-Text -->
+    </div>
+    <!-- End Hero Content-Text -->
 
-      <!-- Hero Content-Cards -->
-      <div class="bg-black/40 mt-20">
+    <!-- Hero Content-Cards -->
+    <div class="bg-black/40 mt-20">
+      <div
+        class="text-white lg:container mx-auto md:flex text-center md:text-left py-14 md:justify-center lg:justify-start px-10"
+      >
+        <!-- Card 1 -->
         <div
-          class="text-white lg:container mx-auto md:flex text-center md:text-left py-14 md:justify-center lg:justify-start px-10"
+          class="lg:mr-20 md:w-80 md:mx-5 lg:mx-0 border-primary1 border-4 rounded-lg my-10 p-10"
         >
-          <!-- Card 1 -->
-          <div
-            class="lg:mr-20 md:w-80 md:mx-5 lg:mx-0 border-primary1 border-4 rounded-lg my-10 p-10"
-          >
-            <h3 class="font-bold text-2xl">Open source for everyone</h3>
-            <p class="text-cgrey text-xl py-4">
-              Absolutely all of my work is fully open source and is available on
-              GitHub right now, for everyone.
-            </p>
-            <FillButtonPrimary
-              text="GitHub"
-              href="https://github.com/lucasodevdottk"
-            />
-          </div>
-          <!-- End Card 1 -->
-          <!-- Card 2 -->
-          <div
-            class="md:w-80 lg:mx-0 md:mx-5 border-primary2 border-4 rounded-lg my-10 p-10"
-          >
-            <h3 class="font-bold text-2xl">
-              Glorifying and fantastic websites
-            </h3>
-            <p class="text-cgrey text-xl py-4">
-              I deliver next-level, modern and creative designs. Want a
-              beautiful and modernistic website, no problem, contact me!
-            </p>
-            <FillButtonSecondary
-              text="Services"
-              href="https://lucasodev.tk/404"
-            />
-          </div>
-          <!-- End Card 2 -->
-        </div>
-      </div>
-      <!-- End Hero Content-Cards -->
-    </section>
-    <!-- End Hero -->
-
-    <!-- About Me -->
-    <section class="bg-black/40">
-      <div class="py-10 lg:container lg:mx-auto px-10">
-        <h2 class="text-4xl font-rubik text-white text-center lg:text-left underline underline-offset-4 decoration-4 decoration-primary2">
-          About Me
-        </h2>
-        <div class="flex">
-          <p class="text-cgrey mt-4 text-center md:text-left">
-            I'm a 13-year-old norwegian tech enthusiast. I love to tinker with
-            computers and have always loved to do so. Knowing Python, HTML, and
-            CSS, I consider myself a junior developer. I have made a more
-            detailed tech stack further down this page. I have been programming
-            for about 2.5 years. In addition to programming, I have also found
-            that I love web-design, so I made this website!
+          <h3 class="font-bold text-2xl">Open source for everyone</h3>
+          <p class="text-cgrey text-xl py-4">
+            Absolutely all of my work is fully open source and is available on
+            GitHub right now, for everyone.
           </p>
-          <img
-            class="hidden lg:block"
-            src="./computer-guy.svg"
-            alt="Illustration of a guy thinking while sitting besides a laptop"
+          <FillButtonPrimary
+            text="GitHub"
+            href="https://github.com/lucasodevdottk"
           />
         </div>
+        <!-- End Card 1 -->
+        <!-- Card 2 -->
+        <div
+          class="md:w-80 lg:mx-0 md:mx-5 border-primary2 border-4 rounded-lg my-10 p-10"
+        >
+          <h3 class="font-bold text-2xl">Glorifying and fantastic websites</h3>
+          <p class="text-cgrey text-xl py-4">
+            I deliver next-level, modern and creative designs. Want a beautiful
+            and modernistic website, no problem, contact me!
+          </p>
+          <FillButtonSecondary
+            text="Services"
+            href="https://lucasodev.tk/404"
+          />
+        </div>
+        <!-- End Card 2 -->
       </div>
-    </section>
-    <!-- End About Me -->
+    </div>
+    <!-- End Hero Content-Cards -->
+  </section>
+  <!-- End Hero -->
 
-    <!-- My projects -->
-    <section class="lg:container mx-auto lg:px-10 bg-mainGlider">
-      <div class="py-20 px-10 lg:px-0">
-        <h2 class="font-rubik text-white text-4xl text-center">Free <span class="text-primary2">Software & Services</span></h2>
-        <p class="text-center text-cgrey pt-10">These are some of the biggest projects I have worked on or working on. All of them are free and open source on GithHub. I am planning on making several new projects in the future.</p>
+  <!-- About Me -->
+  <section class="bg-black/40">
+    <div class="py-10 lg:container lg:mx-auto px-10">
+      <h2
+        class="text-4xl font-rubik text-white text-center lg:text-left underline underline-offset-4 decoration-4 decoration-primary2"
+      >
+        About Me
+      </h2>
+      <div class="flex">
+        <p class="text-cgrey mt-4 text-center md:text-left">
+          I'm a 13-year-old norwegian tech enthusiast. I love to tinker with
+          computers and have always loved to do so. Knowing Python, HTML, and
+          CSS, I consider myself a junior developer. I have made a more detailed
+          tech stack further down this page. I have been programming for about
+          2.5 years. In addition to programming, I have also found that I love
+          web-design, so I made this website!
+        </p>
+        <img
+          class="hidden lg:block"
+          src="./computer-guy.svg"
+          alt="Illustration of a guy thinking while sitting besides a laptop"
+        />
       </div>
+    </div>
+  </section>
+  <!-- End About Me -->
 
-      <!-- Cards -->
-      <div>
-        <MainGlider></MainGlider>
-      </div>
-      <!-- End Cards -->
-    </section>
-    <!-- End My projects -->
-  </MainLayout>
-</html>
+  <!-- My projects -->
+  <section class="lg:container mx-auto lg:px-10 bg-mainGlider">
+    <div class="py-20 px-10 lg:px-0">
+      <h2 class="font-rubik text-white text-4xl text-center">
+        Free <span class="text-primary2">Software & Services</span>
+      </h2>
+      <p class="text-center text-cgrey pt-10">
+        These are some of the biggest projects I have worked on or working on.
+        All of them are free and open source on GithHub. I am planning on making
+        several new projects in the future.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div>
+      <MainGlider />
+    </div>
+    <!-- End Cards -->
+  </section>
+  <!-- End My projects -->
+</MainLayout>
