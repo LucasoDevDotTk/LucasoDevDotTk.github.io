@@ -1,5 +1,7 @@
 ---
 import ButtonBorder from "./ButtonBorder.astro";
+
+import "../css/navbar.css";
 ---
 
 <section class="block p-3 bg-black/25 font-inter">
@@ -11,11 +13,47 @@ import ButtonBorder from "./ButtonBorder.astro";
             <img class="w-60" src="/logo.svg" alt="" />
           </div>
         </a>
-        <div
-          class="flex mx-auto text-4xl justify-center pt-3 lg:hidden text-white"
+        <ul class="menu font-semibold">
+          <li>
+            <a href="https://lucasodev.tk">
+              <div class="mx-auto pt2 sm:mx-0 flex justify-center my-4">
+                <img class="w-60" src="/logo.svg" alt="" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-primary2 text-xl menuItem"
+              href="#about-me">About Me</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-primary2 text-xl menuItem" href=""
+              >My Projects</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-primary2 text-xl menuItem" href=""
+              >Technologies</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-primary2 text-xl menuItem"
+              href="https://blog.lucasodev.tk">Blog</a
+            >
+          </li>
+        </ul>
+        <button
+          class="flex mx-auto text-4xl justify-center pt-3 lg:hidden text-white hamburger"
         >
-          &#9776;
-        </div>
+          <i class="menuIcon"
+            ><img src="menu_FILL0_wght400_GRAD0_opsz48 1.svg" /></i
+          >
+          <i class="closeIcon"
+            ><img src="close_FILL0_wght400_GRAD0_opsz48 1.svg" /></i
+          >
+        </button>
       </div>
       <div class="hidden lg:flex space-x-6 text-primary1 font-light text-md">
         <a class="hover:text-primary2" href="#about-me">About Me</a>
@@ -29,3 +67,25 @@ import ButtonBorder from "./ButtonBorder.astro";
     </div>
   </nav>
 </section>
+
+<script>
+  const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger = document.querySelector(".hamburger");
+  const closeIcon = document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    }
+  }
+
+  hamburger.addEventListener("click", toggleMenu);
+</script>
