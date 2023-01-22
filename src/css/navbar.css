@@ -1,11 +1,12 @@
 .hamburger {
-  position: relative;
+  position:relative;
   z-index: 100;
   cursor: pointer;
 }
 
 .closeIcon {
   display: none;
+  position: fixed;
 }
 
 .menu {
