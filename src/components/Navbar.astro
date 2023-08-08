@@ -4,18 +4,18 @@ import ButtonBorder from "./ButtonBorder.astro";
 import "../css/navbar.css";
 ---
 
-<section class="block p-3 bg-black/25 font-inter">
+<section class="block p-3 bg-black/40 font-inter">
   <nav class="md:container mx-auto">
     <div class="flex items-center justify-between">
       <div class="flex-col mx-auto lg:flex lg:mx-0">
-        <a href="https://lucasodev.tk">
+        <a href="/">
           <div class="mx-auto pt2 sm:mx-0">
             <img class="w-60" src="/logo.svg" alt="" />
           </div>
         </a>
         <ul class="menu font-semibold">
           <li>
-            <a href="https://lucasodev.tk">
+            <a href="/">
               <div class="mx-auto pt2 sm:mx-0 flex justify-center my-4">
                 <img class="w-60" src="/logo.svg" alt="" />
               </div>
@@ -24,17 +24,17 @@ import "../css/navbar.css";
           <li>
             <a
               class="hover:text-primary2 text-xl menuItem"
-              href="#about-me">About Me</a
+              href="/#about-me">About Me</a
             >
           </li>
           <li>
-            <a class="hover:text-primary2 text-xl menuItem" href=""
+            <a class="hover:text-primary2 text-xl menuItem" href="/#my-projects"
               >My Projects</a
             >
           </li>
           <li>
-            <a class="hover:text-primary2 text-xl menuItem" href=""
-              >Technologies</a
+            <a class="hover:text-primary2 text-xl menuItem" href="/#experience"
+              >Experience</a
             >
           </li>
           <li>
@@ -58,13 +58,13 @@ import "../css/navbar.css";
         </div>
       </div>
       <div class="hidden lg:flex space-x-6 text-primary1 font-light text-md">
-        <a class="hover:text-primary2" href="#about-me">About Me</a>
-        <a class="hover:text-primary2" href="">My Projects</a>
-        <a class="hover:text-primary2" href="">Technologies</a>
+        <a class="hover:text-primary2" href="/#about-me">About Me</a>
+        <a class="hover:text-primary2" href="/#my-projects">My Projects</a>
+        <a class="hover:text-primary2" href="/#experience">Experience</a>
         <a class="hover:text-primary2" href="https://blog.lucasodev.tk">Blog</a>
       </div>
       <div class="hidden lg:block m-3 w-40 text-center">
-        <ButtonBorder text="Contact" href="https://lucasodev.tk/404" />
+        <ButtonBorder text="Contact" href="/contact" />
       </div>
     </div>
   </nav>
